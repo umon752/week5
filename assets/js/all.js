@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('.reply').click(function (e) {
         e.preventDefault();
+        $('.content__assignment__user').toggleClass('active');
         $('.reply__content').toggleClass('active');
     });
 

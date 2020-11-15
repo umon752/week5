@@ -9229,9 +9229,14 @@ textarea:focus {
 .content__assignment {
   width: 67%; }
 
+.content__assignment__user {
+  visibility: visible; }
+  .content__assignment__user.active {
+    visibility: hidden; }
+
 .content .reply__content {
   display: none;
-  bottom: 0;
+  top: 0;
   left: 0; }
   .content .reply__content.active {
     display: block; }

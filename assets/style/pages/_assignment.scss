@@ -7,9 +7,15 @@
     }
     
 
+    &__assignment__user {
+        visibility: visible;
+        &.active {
+            visibility: hidden;
+        }
+    }
     .reply__content {
         display: none;
-        bottom: 0;
+        top: 0;
         left: 0;
         &.active {
             display: block;
