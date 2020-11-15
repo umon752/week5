@@ -1,0 +1,4 @@
+// 隱藏卷軸
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar {
+    display: none;
+}

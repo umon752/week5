@@ -1,0 +1,23 @@
+.content {
+    margin-left: 296px;
+    &__list {
+        width: 33%;
+    }
+    &__assignment {
+        width: 100% - 33%;
+    }
+    
+
+    .reply__content {
+        display: none;
+        bottom: 0;
+        left: 0;
+        &.active {
+            display: block;
+        }
+        // 隱藏卷軸右下角三角
+        textarea {
+            resize: none;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.pagination {
+    .page-item a:hover > .material-icons {
+        color: white;
+    }
+    .material-icons {
+        color: $primary;
+        font-size: $font-size-base;
+        line-height: 1.25;
+    }
+}

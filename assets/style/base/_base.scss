@@ -1,0 +1,35 @@
+
+
+/* 全站設定 */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+// body {
+//     font-family: 'Lato', $font-family-base;
+// }
+// h1, h2, h3, h4, h5, h6 {
+//     font-weight:  $font-weight-bold;
+// }
+img {
+    display:block;
+    max-width:100%;
+    height:auto; 
+}
+a {
+    transition: all linear 300ms;
+}
+ul {
+    list-style: none;
+}
+textarea {
+    &:focus{
+        outline: none;
+    }
+}
+// input[type=submit] {
+//     cursor: pointer;
+//     transition: all ease 300ms;
+//     font-size: $font-size-base;
+// }

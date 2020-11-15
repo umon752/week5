@@ -1,0 +1,15 @@
+.sidebar {
+    width: 296px;
+    height: 100vh;
+    .nav-link {
+        transition: .1s;
+        border-left: 0px solid $primary;
+        &:hover{
+            background: $primary-light;
+        }
+    }
+    .active {
+        color: $primary;
+        border-left: 4px solid $primary;
+    }
+}

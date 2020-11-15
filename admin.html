@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | ANSWER</title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap w-100 d-flex">
+        <!-- sidebar -->
+        <aside class="sidebar position-fixed d-flex flex-column justify-content-between py-5 bg-light">
+            <div>
+                <h1 class="logo mb-4 pl-5">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg"
+                        alt="ANSWER">
+                </h1>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link font-weight-bold d-flex pl-5" href="#">
+                            <span class="material-icons mr-3">
+                                insert_chart
+                            </span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link font-weight-bold d-flex pl-5" href="#">
+                            <span class="material-icons mr-3">
+                                question_answer
+                            </span>
+                            Question
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link font-weight-bold d-flex active pl-5" href="#">
+                            <span class="material-icons mr-3">
+                                assignment
+                            </span>
+                            Assignment
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link font-weight-bold d-flex pl-5" href="#">
+                            <span class="material-icons mr-3">
+                                video_library
+                            </span>
+                            Course
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link font-weight-bold d-flex pl-5" href="#">
+                            <span class="material-icons mr-3">
+                                supervisor_account
+                            </span>
+                            Admin
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold d-flex pl-5" href="#">
+                            <span class="material-icons mr-3">
+                                settings
+                            </span>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex pl-5 align-items-center">
+                <img class="avatar rounded-circle mr-3"
+                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg">
+                <div>
+                    <h3 class="h6 font-weight-bold mb-0">Andy Chen</h3>
+                    <span class="font-size-sm text-secondary-dark">andy0401@mail.com</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- content -->
+        <div class="content w-100">
+            <!-- nav -->
+            <nav class="d-flex align-items-center justify-content-between mb-2 p-5">
+                <div class="d-flex align-items-center">
+                    <h2 class="h4 font-weight-bold d-inline mr-6">Admin</h2>
+                    <a href="#" class="font-weight-bold d-flex" data-toggle="modal" data-target="#newAdmin">
+                        <span class="material-icons text-primary mr-2">add</span>
+                        Add New Admin
+                    </a>
+                </div>
+                <ul class="d-flex">
+                    <li class="mr-4">
+                        <a href="#" class="material-icons">
+                            search
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="material-icons">
+                            notifications_active
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- main -->
+            <main class="px-5">
+                <!-- table -->
+                <table class="table table-hover mb-7">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="border-top-0">
+                                <div class="d-flex">
+                                    ID
+                                    <span class="material-icons text-primary ml-2">
+                                        arrow_downward
+                                    </span>
+                                </div>
+                            </th>
+                            <th scope="col" class="border-top-0">Name</th>
+                            <th scope="col" class="border-top-0">Email</th>
+                            <th scope="col" class="border-top-0">Verified</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">#1</th>
+                            <td>Emir Wicks</td>
+                            <td>emir.wicks@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#" data-toggle="modal" data-target="#check">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons" data-toggle="modal" data-target="#editAdmin">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#2</th>
+                            <td>Zaina Goldsmith</td>
+                            <td>zaina.goldsmith@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#3</th>
+                            <td>Mahima Lopez</td>
+                            <td>Mahima.Lopez@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#4</th>
+                            <td>Pharrell Murray</td>
+                            <td>Pharrell.Murray@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#5</th>
+                            <td>Annika Mcbride</td>
+                            <td>Annika.Mcbride@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#6</th>
+                            <td>Fatimah Clark</td>
+                            <td>Fatimah.Clark@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#7</th>
+                            <td>Klaudia Rhodes</td>
+                            <td>Klaudia.Rhodes@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#8</th>
+                            <td>Tillie Lucero</td>
+                            <td>Tillie.Lucero@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#9</th>
+                            <td>Sabrina Stephenson</td>
+                            <td>Sabrina.Stephenson@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <th scope="row">#10</th>
+                            <td>Annie Smith</td>
+                            <td>Annie.Smith@mail.com</td>
+                            <td class="d-flex justify-content-between align-items-center">Yes
+                                <ul class="d-flex align-items-center mb-0">
+                                    <li class="material-icons mr-3">
+                                        <a href="#">
+                                            remove_red_eye
+                                        </a>
+                                    </li>
+                                    <li class="material-icons">
+                                        <a href="#">
+                                            create
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- pagination -->
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                            <a class="page-link d-flex justify-content-center" href="#" aria-label="Previous">
+                                <span class="material-icons">navigate_before</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link d-block" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link d-block" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link d-block" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link d-flex justify-content-center" href="#" aria-label="Next">
+                                <span class="material-icons">keyboard_arrow_right</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </main>
+        </div>
+    </div>
+
+
+    <!-- New Admin -->
+    <div class="modal fade" id="newAdmin" tabindex="-1" aria-labelledby="newAdminLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-items-center border-bottom-0">
+                    <h4 class="modal-title h4 font-weight-bold" id="newAdminLabel">New Admin</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <div class="border-bottom pb-4 mb-4">
+                            <h4 class="h5 font-weight-bold">Account</h4>
+                            <div class="form-group">
+                                <label for="name" class="font-size-sm mb-1">Name</label>
+                                <input type="text" class="form-control py-3" id="name">
+                            </div>
+                            <div class="form-group mb-0">
+                                <label for="email" class="font-size-sm mb-1">Email</label>
+                                <input type="email" class="form-control py-3" id="email">
+                            </div>
+                        </div>
+                        <div class="border-bottom pb-4 mb-4">
+                            <h4 class="h5 font-weight-bold">Verification</h4>
+                            <div class="d-flex mb-3">
+                                <span class="material-icons text-danger mr-2">
+                                    warning
+                                </span>
+                                <span class="font-weight-bold">unverified</span>
+                            </div>
+                            <input type="submit"
+                                class="btn btn-outline-primary-light font-weight-bold text-primary w-100 py-3"
+                                value="Send Verification Mail">
+                        </div>
+                        <div class="border-bottom pb-4 mb-4">
+                            <label for="accessLevel" class="h5 font-weight-bold">Access Level</label>
+                            <select class="form-control" id="accessLevel">
+                                <option>-Choose access level-</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="h5 font-weight-bold">Custom Access</h4>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="lecture">
+                                <label class="form-check-label" for="lecture">lecture</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="coupon">
+                                <label class="form-check-label" for="coupon">Coupon</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="message">
+                                <label class="form-check-label" for="message">Message</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="setting">
+                                <label class="form-check-label" for="setting">Setting</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="taskMenu">
+                                <label class="form-check-label" for="taskMenu">task menu</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <button type="button" class="btn btn-outline-primary px-5" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary px-5" data-dismiss="modal">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Admin - scrollable modal -->
+    <div class="modal fade" id="editAdmin" tabindex="-1" aria-labelledby="editAdminLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header align-items-center ">
+                    <h4 class="modal-title h4 font-weight-bold" id="editAdminLabel">Edit Admin</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <div class="border-bottom pb-4 mb-4">
+                            <h4 class="h5 font-weight-bold">Account</h4>
+                            <div class="form-group">
+                                <label for="edit-name" class="font-size-sm mb-1">Name</label>
+                                <input type="text" class="form-control border-0 text-dark py-3" id="edit-name"
+                                    value="Emir Wicks" readonly>
+                            </div>
+                            <div class="form-group mb-0">
+                                <label for="edit-email" class="font-size-sm mb-1">Email</label>
+                                <input type="email" class="form-control border-0 text-dark py-3" id="edit-email"
+                                    value="emir.wicks@mail.com" readonly>
+                            </div>
+                        </div>
+                        <div class="border-bottom pb-4 mb-4">
+                            <h4 class="h5 font-weight-bold">Verification</h4>
+                            <div class="d-flex mb-3">
+                                <span class="material-icons text-success mr-2">
+                                    check_circle
+                                </span>
+                                <span class="font-weight-bold">Verified</span>
+                            </div>
+                            <input type="submit"
+                                class="btn btn-outline-primary-light font-weight-bold text-primary w-100 py-3"
+                                value="Send Verification Mail" disabled>
+                        </div>
+                        <div class="border-bottom pb-4 mb-4">
+                            <label for="edit-accessLevel" class="h5 font-weight-bold">Access Level</label>
+                            <select class="form-control text-dark" id="edit-accessLevel">
+                                <option>Admin</option>
+                            </select>
+                        </div>
+                        <div class="border-bottom pb-4 mb-4">
+                            <h4 class="h5 font-weight-bold">Custom Access</h4>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="edit-lecture">
+                                <label class="form-check-label" for="edit-lecture">lecture</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="edit-coupon">
+                                <label class="form-check-label" for="edit-coupon">Coupon</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="edit-message">
+                                <label class="form-check-label" for="edit-message">Message</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="edit-setting">
+                                <label class="form-check-label" for="edit-setting">Setting</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="edit-taskMenu">
+                                <label class="form-check-label" for="edit-taskMenu">task menu</label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="h5 font-weight-bold">Deactivate Account</h4>
+                            <div class="d-flex mb-3">
+                                <span class="material-icons text-danger mr-2">
+                                    warning
+                                </span>
+                                <span class="font-weight-bold">This cannot be undone!</span>
+                            </div>
+                            <input type="submit" class="btn btn-outline-danger font-weight-bold w-100 py-3"
+                                value="Deactivate This Account">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary px-5" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary px-5" data-dismiss="modal">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- check -->
+    <div class="modal fade" id="check" tabindex="-1" aria-labelledby="checkLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex p-5">
+                    <img class="check__modal--img"
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emir.jpeg">
+                    <ul class="w-100 pl-4 mb-0">
+                        <li class="d-flex justify-content-between mb-2">
+                            #1
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </li>
+                        <li>Admin</li>
+                        <li class="h4 font-weight-bold">Emir Wicks</li>
+                        <li class="text-secondary-dark mb-2">emir.wicks@mail.com</li>
+                        <li class="w-100">
+                            <a href="#" class="verified d-flex justify-content-between">
+                                <span class="bg-light py-1 px-2">verified</span>
+                                <span class="material-icons text-primary">
+                                    expand_more
+                                </span>
+                            </a>
+                            <div class="verified__btn">
+                                <div class="mt-5">
+                                    <button type="button" class="btn btn-outline-danger px-5 mr-3">Deactivate</button>
+                                    <button type="button" class="btn btn-primary px-5">Edit</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/js"></script>
+</body>
+
+</html>
