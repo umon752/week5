@@ -9221,19 +9221,22 @@ textarea:focus {
     border-left: 4px solid #2A8356; }
 
 .content {
-  margin-left: 296px; }
-  .content__list {
-    width: 33%; }
-  .content__assignment {
-    width: 67%; }
-  .content .reply__content {
-    display: none;
-    bottom: 0;
-    left: 0; }
-    .content .reply__content.active {
-      display: block; }
-    .content .reply__content textarea {
-      resize: none; }
+  width: calc(100vw - 296px); }
+
+.content__list {
+  width: 33%; }
+
+.content__assignment {
+  width: 67%; }
+
+.content .reply__content {
+  display: none;
+  bottom: 0;
+  left: 0; }
+  .content .reply__content.active {
+    display: block; }
+  .content .reply__content textarea {
+    resize: none; }
 
 .check__modal--img {
   width: 141px;
