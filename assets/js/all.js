@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.reply').click(function (e) {
+    $('.content__assignment__user--replyToggle').click(function (e) {
         e.preventDefault();
         $('.content__assignment__user').toggleClass('active');
         $('.reply__content').toggleClass('active');
