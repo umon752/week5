@@ -3,16 +3,3 @@
     height: 141px;
     object-fit: cover;
 }
-.verified {
-    .material-icons.active {
-        transform: rotate(180deg);
-    }
-}
-.verified__btn {
-    max-height: 0px;
-    transition: all 0.8s;
-    overflow: hidden;
-    &.active {
-        max-height: 150px;
-    }
-}

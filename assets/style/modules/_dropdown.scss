@@ -1,0 +1,18 @@
+.dropdown {
+    .material-icons {
+        transition: all 0.3s;
+        &.active {
+            transform: rotate(180deg);
+            transition: all 0.3s;
+        }
+    }
+}
+.dropdown__btn {
+    max-height: 0px;
+    transition: all 0.5s;
+    overflow: hidden;
+    &.active {
+        max-height: 150px;
+        transition: all 0.5s;
+    }
+}

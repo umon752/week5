@@ -9163,13 +9163,10 @@ a.text-secondary-dark:hover, a.text-secondary-dark:focus {
 .list-style-circle {
   list-style: disc; }
 
-/* 全站設定 */
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+.border-bottom-bold {
+  border-bottom: 2px solid #121212; }
 
+/* 全站設定 */
 img {
   display: block;
   max-width: 100%;
@@ -9185,9 +9182,6 @@ ul {
 
 textarea:focus {
   outline: none; }
-
-.table thead th {
-  border-bottom: 1px solid #121212; }
 
 .pagination .page-item a:hover > .material-icons {
   color: white; }
@@ -9206,9 +9200,39 @@ textarea:focus {
   -o-object-fit: cover;
   object-fit: cover; }
 
+.dropdown .material-icons {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .dropdown .material-icons.active {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.dropdown__btn {
+  max-height: 0px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden; }
+  .dropdown__btn.active {
+    max-height: 150px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+
 .sidebar {
   width: 296px;
   height: 100vh; }
+  .sidebar .logo {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg");
+    overflow: hidden;
+    text-indent: 101%;
+    background-repeat: no-repeat;
+    white-space: nowrap; }
   .sidebar .nav-link {
     -webkit-transition: .1s;
     -o-transition: .1s;
@@ -9223,24 +9247,24 @@ textarea:focus {
 .content {
   width: calc(100vw - 296px); }
 
-.content__list {
-  width: 33%; }
+.assignment__list {
+  width: 30%; }
 
-.content__assignment {
-  width: 67%; }
+.assignment__content {
+  width: 70%; }
 
-.content__assignment__user {
+.assignment__content__user {
   visibility: visible; }
-  .content__assignment__user.active {
+  .assignment__content__user.active {
     visibility: hidden; }
 
-.content .reply__content {
+.assignment .reply__content {
   display: none;
   top: 0;
   left: 0; }
-  .content .reply__content.active {
+  .assignment .reply__content.active {
     display: block; }
-  .content .reply__content textarea {
+  .assignment .reply__content textarea {
     resize: none; }
 
 .check__modal--img {
@@ -9248,17 +9272,3 @@ textarea:focus {
   height: 141px;
   -o-object-fit: cover;
   object-fit: cover; }
-
-.verified .material-icons.active {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-.verified__btn {
-  max-height: 0px;
-  -webkit-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  transition: all 0.8s;
-  overflow: hidden; }
-  .verified__btn.active {
-    max-height: 150px; }

@@ -1,6 +1,13 @@
 .sidebar {
     width: 296px;
     height: 100vh;
+    .logo {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg");
+        overflow: hidden;
+        text-indent: 101%;
+        background-repeat: no-repeat;
+        white-space: nowrap;
+    }
     .nav-link {
         transition: .1s;
         border-left: 0px solid $primary;

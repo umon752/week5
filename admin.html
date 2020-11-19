@@ -14,9 +14,10 @@
         <!-- sidebar -->
         <aside class="sidebar d-flex flex-column justify-content-between py-5 bg-light">
             <div>
-                <h1 class="logo mb-4 pl-5">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg"
-                        alt="ANSWER">
+                <h1 class="mb-4 pl-5">
+                    <a href="#" class="logo d-inline-block">
+                        ANSWER
+                    </a>
                 </h1>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -109,7 +110,7 @@
                 <table class="table table-hover mb-7">
                     <thead>
                         <tr>
-                            <th scope="col" class="border-top-0">
+                            <th scope="col" class="border-top-0 border-bottom-bold pl-0">
                                 <div class="d-flex">
                                     ID
                                     <span class="material-icons text-primary ml-2">
@@ -117,17 +118,17 @@
                                     </span>
                                 </div>
                             </th>
-                            <th scope="col" class="border-top-0">Name</th>
-                            <th scope="col" class="border-top-0">Email</th>
-                            <th scope="col" class="border-top-0">Verified</th>
+                            <th scope="col" class="border-top-0 border-bottom-bold">Name</th>
+                            <th scope="col" class="border-top-0 border-bottom-bold">Email</th>
+                            <th scope="col" class="border-top-0 border-bottom-bold">Verified</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">#1</th>
+                            <th scope="row" class="pl-0">#1</th>
                             <td>Emir Wicks</td>
                             <td>emir.wicks@mail.com</td>
-                            <td class="d-flex justify-content-between align-items-center">Yes
+                            <td class="d-flex justify-content-between align-items-center border-top-0">Yes
                                 <ul class="d-flex align-items-center mb-0">
                                     <li class="material-icons mr-3">
                                         <a href="#" data-toggle="modal" data-target="#check">
@@ -143,7 +144,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#2</th>
+                            <th scope="row" class="pl-0">#2</th>
                             <td>Zaina Goldsmith</td>
                             <td>zaina.goldsmith@mail.com</td>
                             <td class="d-flex justify-content-between align-items-center">Yes
@@ -162,7 +163,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#3</th>
+                            <th scope="row" class="pl-0">#3</th>
                             <td>Mahima Lopez</td>
                             <td>Mahima.Lopez@mail.com</td>
                             <td class="d-flex justify-content-between align-items-center">Yes
@@ -181,7 +182,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#4</th>
+                            <th scope="row" class="pl-0">#4</th>
                             <td>Pharrell Murray</td>
                             <td>Pharrell.Murray@mail.com</td>
                             <td class="d-flex justify-content-between align-items-center">Yes
@@ -200,7 +201,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#5</th>
+                            <th scope="row" class="pl-0">#5</th>
                             <td>Annika Mcbride</td>
                             <td>Annika.Mcbride@mail.com</td>
                             <td class="d-flex justify-content-between align-items-center">Yes
@@ -219,7 +220,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#6</th>
+                            <th scope="row" class="pl-0">#6</th>
                             <td>Fatimah Clark</td>
                             <td>Fatimah.Clark@mail.com</td>
                             <td class="d-flex justify-content-between align-items-center">Yes
@@ -238,7 +239,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#7</th>
+                            <th scope="row" class="pl-0">#7</th>
                             <td>Klaudia Rhodes</td>
                             <td>Klaudia.Rhodes@mail.com</td>
                             <td class="d-flex justify-content-between align-items-center">Yes
@@ -257,7 +258,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#8</th>
+                            <th scope="row" class="pl-0">#8</th>
                             <td>Tillie Lucero</td>
                             <td>Tillie.Lucero@mail.com</td>
                             <td class="d-flex justify-content-between align-items-center">Yes
@@ -276,7 +277,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">#9</th>
+                            <th scope="row" class="pl-0">#9</th>
                             <td>Sabrina Stephenson</td>
                             <td>Sabrina.Stephenson@mail.com</td>
                             <td class="d-flex justify-content-between align-items-center">Yes
@@ -295,7 +296,7 @@
                             </td>
                         </tr>
                         <tr class="border-bottom">
-                            <th scope="row">#10</th>
+                            <th scope="row" class="pl-0">#10</th>
                             <td>Annie Smith</td>
                             <td>Annie.Smith@mail.com</td>
                             <td class="d-flex justify-content-between align-items-center">Yes
@@ -517,13 +518,13 @@
                         <li class="h4 font-weight-bold">Emir Wicks</li>
                         <li class="text-secondary-dark mb-2">emir.wicks@mail.com</li>
                         <li class="w-100">
-                            <a href="#" class="verified d-flex justify-content-between">
+                            <a href="#" class="dropdown d-flex justify-content-between">
                                 <span class="bg-light py-1 px-2">verified</span>
                                 <span class="material-icons text-primary">
                                     expand_more
                                 </span>
                             </a>
-                            <div class="verified__btn">
+                            <div class="dropdown__btn">
                                 <div class="mt-5">
                                     <button type="button" class="btn btn-outline-danger px-5 mr-3">Deactivate</button>
                                     <button type="button" class="btn btn-primary px-5">Edit</button>
